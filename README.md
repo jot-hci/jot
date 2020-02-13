@@ -1,2 +1,2 @@
-# jot
-A web application for increasing effectiveness of therapy through journaling.
+# project5
+Basic instructions go here.
