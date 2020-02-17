@@ -28,7 +28,7 @@ html, body {
 .container {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -43,17 +43,8 @@ html, body {
   margin-top: 80px;
 }
 
-.container {
-  padding: 16px;
-}
-
 .login-header {
 	font-size: 40px;
-}
-
-.login-container {
-	width: 40%;
-	margin: auto;
 }
 
 .login-input {
