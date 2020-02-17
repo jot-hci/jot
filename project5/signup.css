@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Cambo', serif;
+  font-size: 14pt;
+  background-color: #f2f0eb;
+}
+
+.navBar {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.logo {
+  width: 130px;
+  height: 65px;
+  position: relative;
+  padding: 20px;
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.formBody {
+  width: 500px;
+  padding: 20px 40px 40px;
+  background-color: white;
+  color: #2e2e2e;
+  margin-top: 80px;
+}
+
+.signUpHeader {
+  font-size: 40px;
+}
+
+.inputBody {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.input {
+  border: none;
+  height: 50px;
+  font-family: 'Cambo', serif;
+  font-size: 14pt;
+  padding: 0 10px;
+  margin: 5px;
+  background-color: #f2f0eb;
+}
+
+.firstName {
+  width: 217px;
+}
+
+.lastName {
+  width: 217px;
+}
+
+.radioInput {
+  margin: 20px;
+}
+
+.submitButton {
+  width: 500px;
+  height: 50px;
+  font-size: 14pt;
+  font-family: 'Cambo', serif;
+  font-weight: bold;
+  background-color: #54ab6b;
+  color: white;
+  margin: 20px 0px;
+}
+
+.signInOption {
+  text-align: center;
+  margin: 10px;
+}
