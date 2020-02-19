@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Dashboard</title>
-        <link rel="stylesheet" type= "text/css" href="dashboard.css">
+        <link rel="stylesheet" type= "text/css" href="therapist-dashboard.css">
         <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -15,28 +15,29 @@
                 <a href="faqs.html" id="faq">FAQs</a>
             </div>
             <div class="welcome">
-                <a>Welcome, John</a>
+                <a>Welcome, Amy</a>
                 <div class="welcome-dash">
                     <a href="login.html" id="logout">Logout</a>
                     <a href="https://suicidepreventionlifeline.org/" target="_blank" id="emergency">Emergency</a>
                 </div>
             </div>
+            <hr class="line"/>
         </div>
         <div class="main">
             <div class="progress-chatroom">
                 <div class="progress-graph">
-                    <p id="title">Progress Report:</p>
+                    <p id="title">Patient Progress Report:</p>
                     <img src="../images/graph.png"><img>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
-                        <p id="chat-title">Chat with Therapist</p>
+                        <p id="chat-title">Chat with Patient</p>
                         <div class="is-online">
                             <img src="../images/offline.png"></img>
                             <p>Offline</p>
                         </div>
                     </div>
-                    <p class="chat-display">Therapist is not online...</p>
+                    <p class="chat-display">Patient is not online...</p>
                     <form class="message-area">
                         <button>Send</button>
                         <input class="chat-entry" type="text-area" placeholder="Type a message..."> </input>
@@ -47,7 +48,7 @@
                 <div class="journal-hub-header">
                     <img src="../images/leaf.png"></img>
                     <p id="hub-title">Journal Hub</p>
-                    <a href="journal.html"class="createNew">+ Create New</a>
+                    <!-- <a href="journal.html"class="createNew">+ Create New</a> --> 
                     <a href="journal.html"class="createNewSmall">+</a>
                 </div>
                 <form>
