@@ -22,12 +22,6 @@ html, body {
     border-bottom-style: solid;
 }
 
-.line {
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 0;
-}
-
 .logo {
     width: 130px;
     height: 65px;
@@ -121,8 +115,8 @@ html, body {
     width: 40%;
     margin-left: 2%;
     margin-right: 4%;
-    border-color:#2e2e2e;
-    border-width: 2px;
+    border-color:#ccc;
+    border-width: 1px;
     background-color: white;
     border-style: solid;
     height: 600px;
@@ -133,7 +127,7 @@ html, body {
     justify-content: center;
     width: 100%;
     background-color: rgb(240, 255, 249);
-    border-bottom: #2e2e2e;
+    border-bottom: #ccc;
     border-bottom-width: 2px;
     border-bottom-style: solid;
 }
@@ -204,7 +198,7 @@ html, body {
     padding-top:50px;
     padding-bottom:50px;
     text-align: center;
-    border-color: #2e2e2e;
+    border-color: #ccc;
     border-width: 2px;
     border-style: solid;
     text-decoration: none;
@@ -223,10 +217,7 @@ html, body {
     width: 60%;
     margin-left: 4%;
     margin-right: 2%;
-    border-color: #2e2e2e;
-    border-width: 2px;
-    background-color: white;
-    border-style: solid;
+    border: none;
     margin-bottom: 20px;
 }
 
@@ -234,13 +225,12 @@ html, body {
 .progress-graph{
     display: flex;
     flex-direction: column;
-    border-color: #2e2e2e;
-    border-width: 2px;
+    border-color: #ccc;
+    border-width: 1px; 
     background-color: white;
-    border-style: solid;
+    border-style: solid; 
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: 3%;
 }
 .progress-graph img{
     width: 100%;
@@ -261,8 +251,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-color: #2e2e2e;
-    border-width: 2px;
+    border-color: #ccc;
+    border-width: 1px;
     background-color: rgb(250, 255, 253);
     border-style: solid;
     margin-left: 3%;
@@ -284,7 +274,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     background-color: rgb(240, 255, 249);
-    border-bottom: #2e2e2e;
+    border-bottom: #ccc;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     width:100%;
@@ -308,7 +298,7 @@ html, body {
     text-align: center;
     border-radius: 2px;
     border-style: solid;
-    border-color: #2e2e2e;
+    border-color: #ccc;
     border-width: 1px;
     background-color: #fff2f2;
     text-decoration: none;
@@ -322,7 +312,7 @@ html, body {
     width: 93%;
     margin-top: 2%;
     height: 250px;
-    border-color: #2e2e2e;
+    border-color: #ccc;
     border-width: 2px;
     border-style: solid;
     background-color: white;
