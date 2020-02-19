@@ -16,10 +16,18 @@ html, body {
     display: flex;
     flex-direction: row;
     font-size: larger;
+    /* consider removing border */
     border-bottom-color: #ccc;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
+
+.line {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
 .logo {
     width: 130px;
     height: 65px;
@@ -58,6 +66,7 @@ html, body {
     margin-top: 25px;
 }
 .welcome-dash{
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 3px;
 }
@@ -243,7 +252,7 @@ html, body {
     border-bottom-color: hsl(150, 54%, 44%);
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    width: 190px;
+    width: 280px;
     font-size: 25px;
 }
 
