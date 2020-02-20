@@ -11,7 +11,17 @@
             <img src="../images/jot-logo.png" class="logo">
             <div class="navButtons">
                 <a href="about-us.html" id="about-us">About Us</a>
-                <a id="dashboard">Dashboard</a>
+                <div class= "dropdown">
+                    <!-- <a id="dashboard">Dashboard</a> -->
+                    <button class="patients">Patients
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a id="john" href="#">John</a>
+                      <a href="#">Susan</a>
+                      <a href="#">Sarah</a>
+                    </div>
+                </div>
                 <a href="faqs.html" id="faq">FAQs</a>
             </div>
             <div class="welcome">
@@ -25,12 +35,14 @@
         <div class="main">
             <div class="progress-chatroom">
                 <div class="progress-graph">
-                    <p id="title">Patient Progress Report:</p>
+                    <span id="progress-title">
+                        <h3>John's Progress Report:</h3>
+                    </span>
                     <img src="../images/graph.png"><img>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
-                        <p id="chat-title">Chat with Patient</p>
+                        <p id="chat-title">Chat with John</p>
                         <div class="is-online">
                             <img src="../images/offline.png"></img>
                             <p>Offline</p>
@@ -46,9 +58,7 @@
             <div class="journal-hub">
                 <div class="journal-hub-header">
                     <img src="../images/leaf.png"></img>
-                    <p id="hub-title">Journal Hub</p>
-                    <!-- <a href="journal.html"class="createNew">+ Create New</a> --> 
-                    <a href="journal.html"class="createNewSmall">+</a>
+                    <p id="hub-title">Pinned Journal Entries</p>
                 </div>
                 <form>
                     <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>

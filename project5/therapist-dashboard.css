@@ -16,7 +16,6 @@ html, body {
     display: flex;
     flex-direction: row;
     font-size: larger;
-    /* consider removing border */
     border-bottom-color: #ccc;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -43,10 +42,14 @@ html, body {
     text-align: center;
     color: #2e2e2e;
     padding-bottom: 3px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
-.navButtons a:hover{
+
+#about-us {
+    margin-left: 2%;
+}
+.navButtons a:hover {
     border-bottom: solid;
     border-bottom-color: hsl(150, 54%, 44%);
     border-bottom-width: 3px;
@@ -58,6 +61,7 @@ html, body {
     width: 100%;
     padding-right: 50px;
     margin-top: 25px;
+    font-weight: bold;
 }
 .welcome-dash{
     padding-left: 10px;
@@ -89,12 +93,68 @@ html, body {
     border-bottom-width: 3px;
     font-weight: bold;
 }
-#dashboard{
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .patients{
+    font-family: 'Cambo', serif;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 58px;
+    padding-bottom: 3px;
+    margin-right: 2%;
+    padding-left: 0;
+    padding-right: 0;
+
     border-bottom: solid;
     border-bottom-color: hsl(150, 54%, 44%);
     border-bottom-width: 3px;
-    font-weight: bold;
+
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f0eb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+.dropdown-content a:hover {
+  border: none;
+  background-color: rgb(240, 255, 249);
+}
+
+#john {
+  border: none;
+  background-color: rgb(240, 255, 249);
+  font-weight: bold;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 
@@ -141,33 +201,7 @@ html, body {
     padding-right: 20px;
     font-size: 20px;
 }
-.createNew{
-    width: 35%;
-    font-family: 'Cambo', serif;
-    text-align: center;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: #2e2e2e;
-    border-width: 1px;
-    background-color: #fdfdfd;
-    text-decoration: none;
-    font-size: large;
-    color: #2e2e2e;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 10px;
-}
-.createNewSmall {
-    display: none;
-}
-.createNew:hover{
-    background-color: #d9fce8;
-}
-.createNewSmall:hover{
-    background-color: #d9fce8;
-}
+
 .search-bar{
     border: none;
     height: 40px;
@@ -221,7 +255,6 @@ html, body {
     margin-bottom: 20px;
 }
 
-
 .progress-graph{
     display: flex;
     flex-direction: column;
@@ -232,20 +265,30 @@ html, body {
     margin-left: 3%;
     margin-right: 3%;
 }
+
 .progress-graph img{
     width: 100%;
     height: auto;
 }
-.progress-graph #title{
+
+#progress-title {
     margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#progress-title h3{
+    display: table-cell;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-bottom: 6px;
     border-bottom-color: hsl(150, 54%, 44%);
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    width: 280px;
     font-size: 25px;
+    font-weight: normal;
+    
 }
-
 
 .chatroom{
     display: flex;
@@ -349,9 +392,6 @@ html, body {
 
 
 @media screen and (max-width: 1000px){
-    .createNew{
-        display: none;
-    }
     .chatroom #chat-title{
         width: 70%;
     }
@@ -363,25 +403,6 @@ html, body {
         padding-top: 14px;
         background-color: transparent;
         border-width: 0px;
-    }
-    .createNewSmall{
-        display: block;
-        width: 10%;
-        font-family: 'Cambo', serif;
-        text-align: center;
-        border-radius: 40px;
-        border-style: solid;
-        border-color: #2e2e2e;
-        border-width: 1px;
-        background-color: #fdfdfd;
-        text-decoration: none;
-        font-size: large;
-        color: #2e2e2e;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-right: 10px;
     }
 }
 @media screen and (max-width: 800px){
