@@ -109,7 +109,7 @@ html, body {
 .prompt-container {
   justify-content: center;
   align-items: flex-start;
-  margin-top : 130px;
+  margin-top : 120px;
   padding-left: 50px;
 }
 
@@ -132,6 +132,35 @@ html, body {
   display: flex;
   flex-direction: row;
   margin-left: 20px;
+}
+
+.button-container {
+  width: 80%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  /*align-items: center;*/
+}
+
+.button-container button {
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  padding: 20px;
+  border: none;
+  color: white;
+  background-color: #54ab6b;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-family: 'Cambo', serif;
+  font-size: 11pt;
+  font-weight: bold;
+
+
 }
 
 #title-input {
