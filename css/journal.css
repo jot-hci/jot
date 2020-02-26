@@ -142,9 +142,9 @@ html, body {
 }
 
 .slide-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .slide-container i {
@@ -243,6 +243,10 @@ html, body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   font-size: 12pt;
   padding: 7px;
+}
+
+#pin {
+  opacity: .7;
 }
 
 .pin-container:hover .tooltip {
