@@ -24,17 +24,30 @@
 
         </div>
        <div class="main">
-            <div class= "prompt-container">
-                <h1> Today's Prompt: </h1>
-                <h3> What did you learn in therapy today? </h3>
+            <div class= "header-container">
+                <div class="prompt-container">
+                    <h1> Today's Prompt: </h1>
+                    <h3> What did you learn in therapy today? </h3>
+                </div>
+                <div class= "mood-container">
+                    <h2>How do you feel?</h2>
+                    <div class="slide-container">
+                        <i class="fas fa-sad-tear"></i>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                </div>
             </div>
             <section class= "journal-entry">
                 <div class= "title-container">
                     <input id="title-input" type="text" placeholder="Enter Optional Title Here" name="title">
                     <div class="button-container">
                         <button id="save">Save </button>
-                        <button id="save" onclick="window.location.href = 'dashboard.html';">Done </button>
-                        <button id="pin"><i class="fas fa-paperclip fa-lg"></i></button>
+                        <button id="save" onclick="window.location.href = 'dashboard.html';">Done  </button>
+                        <div class="pin-container">
+                            <button id="pin"><i class="fas fa-paperclip fa-lg"></i></button>
+                            <span class="tooltip">Pin entry to share with therapist.</span>
+                        </div>
                     </div>
                 </div>
                 <div class="entry-container">
