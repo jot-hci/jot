@@ -199,4 +199,5 @@ html, body {
 .contact-patient a {
     color: #54ab6b;
     text-decoration-line: none;
+    margin-bottom: 20px;
 }
