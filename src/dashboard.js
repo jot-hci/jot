@@ -11,7 +11,6 @@ const getEntryTemplate = (data, num) => {
 
 const loadEntries = () => {
 	var entries = document.querySelector(".entries");
-	alert (localStorage.length);
 	for (var i = 0; i < localStorage.length; i++){
 		entries.innerHTML += getEntryTemplate(JSON.parse(localStorage.getItem(localStorage.key(i))), i);
 	}
