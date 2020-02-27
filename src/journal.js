@@ -30,7 +30,7 @@ const saveEntry = () => {
 			mood: document.querySelector(".slider").value,
 		};
 		window.localStorage.setItem(localStorage.length, JSON.stringify(newEntry));
-		ind = localStorage.length;
+		ind = localStorage.length - 1;
 		numEntries ++;
 	}
 
