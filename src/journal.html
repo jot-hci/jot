@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
+    <body onload= "newEntry()">
         <div class="navBar">
             <img src="../images/jot-logo.png" class="logo">
             <div class="navButtons">
@@ -42,7 +42,7 @@
                 <div class= "title-container">
                     <input id="title-input" type="text" placeholder="Enter Optional Title Here" name="title">
                     <div class="button-container">
-                        <button id="save">Save </button>
+                        <button id="save" onclick="saveEntry()">Save </button>
                         <button id="save" onclick="window.location.href = 'dashboard.html';">Done  </button>
                         <div class="pin-container">
                             <button id="pin" onclick="pinEntry()"><i class="fas fa-paperclip fa-lg"></i></button>
