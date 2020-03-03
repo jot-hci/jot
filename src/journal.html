@@ -42,11 +42,17 @@
                 <div class= "title-container">
                     <input id="title-input" type="text" placeholder="Enter Optional Title Here" name="title">
                     <div class="button-container">
-                        <button id="save" onclick="saveEntry()">Save </button>
-                        <button id="save" onclick="window.location.href = 'dashboard.html';">Done  </button>
+                        <div class="save-container">
+                            <button id="save" onclick="saveEntry()"><i class="far fa-save fa-lg"></i></button>
+                            <span class="tooltip">Save entry.</span>
+                        </div>
+                        <div class="done-container">
+                            <button id="done" onclick="window.location.href = 'dashboard.html';"><i class="fas fa-times-circle fa-lg"></i></button>
+                            <span class="tooltip">Back to dashboard.</span>
+                        </div>
                         <div class="pin-container">
-                            <button id="pin" onclick="pinEntry()"><i class="fas fa-paperclip fa-lg"></i></button>
-                            <span class="tooltip">Pin entry to share with therapist.</span>
+                            <button id="pin" onclick="pinEntry()"><i class="fas fa-user-shield fa-lg"></i></button>
+                            <span class="tooltip">Share entry with therapist.</span>
                         </div>
                     </div>
                 </div>

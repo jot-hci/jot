@@ -3,7 +3,7 @@
 const getEntryTemplate = (data, num) => {
 	
 	const template = `
-	<a href="#" id="${num}">${data.title}</a>
+	<a href="journal.html" id="${num}">${data.title}</a>
 	`
 	return template;
 

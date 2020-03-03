@@ -224,7 +224,21 @@ html, body {
   font-weight: bold;
 }
 
+.save-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: inline-block;
+}
+
 .pin-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: inline-block;
+}
+
+.done-container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -239,17 +253,26 @@ html, body {
   z-index: 2;
   background-color: #f2f0eb;
   min-width: 75px;
-  min-height: 100px;
+  min-height: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   font-size: 12pt;
   padding: 7px;
 }
 
 #pin {
+  text-align: center;
   opacity: .7;
 }
 
 .pin-container:hover .tooltip {
+  display: block;
+}
+
+.save-container:hover .tooltip {
+  display: block;
+}
+
+.done-container:hover .tooltip {
   display: block;
 }
 
