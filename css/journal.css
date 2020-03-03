@@ -253,9 +253,9 @@ html, body {
   z-index: 2;
   background-color: #f2f0eb;
   min-width: 75px;
-  min-height: 80px;
+  min-height: 50px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  font-size: 12pt;
+  font-size: 10pt;
   padding: 7px;
 }
 

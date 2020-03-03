@@ -29,6 +29,13 @@ const saveEntry = () => {
 			content: document.querySelector("#entry").value,
 			mood: document.querySelector(".slider").value,
 		};
+
+		if(newEntry.title == "")
+		{
+			var today = new Date();
+			var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+			newEntry.title = date;
+		}
 		window.localStorage.setItem(localStorage.length, JSON.stringify(newEntry));
 		ind = localStorage.length - 1;
 		numEntries ++;
