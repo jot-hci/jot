@@ -4,6 +4,7 @@
         <title>Dashboard</title>
         <link rel="stylesheet" type= "text/css" href="../css/dashboard.css">
         <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -28,7 +29,7 @@
                     <div id="progress-title">
                         <h2>Progress Report</h2>
                     </div>
-                    <img src="../images/graph.png"><img>
+                    <canvas id="moodChart"></canvas>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
@@ -48,7 +49,7 @@
                 </div>
                 <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>
                 <div class="entries">
-                    <a href="#" id="entry-one">Entry One</a>
+                    <a href="therapist-journal-view.html" id="entry-one">Entry One</a>
                     <a href="#" id="entry-two">Entry Two</a>
                     <a href="#" id="entry-three">Entry Three</a>
                     <a href="#" id="entry-four">Entry Four</a>
@@ -58,4 +59,40 @@
             </div>
         </div>
     </body>
+    <script>
+      var ctx = document.getElementById("moodChart").getContext('2d');
+      var moodChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["2/20/20","2/21/20","2/22/20","2/23/20","2/24/20","2/25/20","2/26/20", "2/27/20", "2/28/20", "3/1/20",	"3/2/20"],
+              datasets: [{ // Name the series
+                  data: [0, 3, 2, 4, 8, 5, 6, 10, 1, 9, 8], // Specify the data values array
+                  fill: false,
+                  borderColor: '#54ab6b', // Add custom color border (Line)
+                  backgroundColor: '#FFD700', // Add custom color background (Points and Fill)
+                  borderWidth: 2,// Specify bar border width
+                  pointRadius: 6,
+                  pointHoverRadius: 6
+              }]},
+          options: {
+           legend: {
+              display: false
+           },
+            responsive: true, // Instruct chart js to respond nicely.
+            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+            scales: {
+                  xAxes: [{
+                      gridLines: {
+                          display:true
+                      }
+                  }],
+                  yAxes: [{
+                      gridLines: {
+                          display:false
+                      }
+                  }]
+              }
+          }
+      });
+      </script>
 </html>

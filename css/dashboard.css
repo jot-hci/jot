@@ -205,10 +205,8 @@ html, body {
     align-items: center;
 }
 
-.progress-graph img {
-    width: 95%;
-    height: auto;
-    padding: 5px;
+#moodChart {
+    margin: 10px;
 }
 
 #progress-title {
