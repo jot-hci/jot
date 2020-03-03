@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<head>
+        <title>Create Journal</title>
+        <link rel="stylesheet" type= "text/css" href="../css/journal.css">
+        <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="navBar">
+            <img src="../images/jot-logo.png" class="logo">
+            <div class="navButtons">
+                <a href="about-us.html" id="about-us">About Us</a>
+                <a href= "dashboard.html" id="dashboard">Dashboard</a>
+                <a href="faqs.html" id="faq">FAQs</a>
+            </div>
+            <div class="welcome">
+                <a>Welcome, John</a>
+                <div class="welcome-dash">
+                    <a href="login.html" id="logout">Logout</a>
+                    <a href="https://suicidepreventionlifeline.org/" target="_blank" id="emergency">Emergency</a>
+                </div>
+            </div>
+
+        </div>
+       <div class="main">
+            <div class= "header-container">
+                <div class="prompt-container">
+                    <h1> Today's Prompt: </h1>
+                    <h3> What did you learn in therapy today? </h3>
+                </div>
+                <div class= "mood-container">
+                    <h2>How do you feel?</h2>
+                    <div class="slide-container">
+                        <i class="fas fa-sad-tear"></i>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                </div>
+            </div>
+            <section class= "journal-entry">
+                <div class= "title-container">
+                    <input id="title-input" type="text" placeholder="Enter Optional Title Here" name="title">
+                    <div class="button-container">
+                        <button id="save">Save </button>
+                        <button id="save" onclick="window.location.href = 'dashboard.html';">Done  </button>
+                        <div class="pin-container">
+                            <button id="pin" onclick="pinEntry()"><i class="fas fa-paperclip fa-lg"></i></button>
+                            <span class="tooltip">Pin entry to share with therapist.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-container">
+                    <textarea id="entry" type="text" placeholder="Let the ideas flow... " cols="1" rows="10"></textarea>
+                </div>
+            </section>
+       </div>
+        <script type="text/javascript" src="journal.js"></script>
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>

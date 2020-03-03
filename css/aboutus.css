@@ -1,0 +1,204 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Cambo', serif;
+    font-size: 14pt;
+    background-color: #f2f0eb;
+  }
+
+/* Nav Bar CSS */
+.navBar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 130px;
+    height: 65px;
+    position: relative;
+    padding: 20px;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 675px;
+    position: absolute;
+}
+.navButtons a{
+    font-family: 'Cambo', serif;
+    text-decoration: none;
+    margin-top: 40px;
+    text-align: center;
+    color: #2e2e2e;
+    padding-bottom: 3px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.navButtons a:hover{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 50px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.welcome-dash{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+#logout {
+    text-decoration: none;
+    color: #2e2e2e;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+#logout:hover{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+}
+#emergency {
+    text-decoration: none;
+    color: #ff0000;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+#emergency:hover{
+    border-bottom: solid;
+    border-bottom-color: hsl(0, 100%, 50%);
+    border-bottom-width: 3px;
+    font-weight: bold;
+}
+
+
+/*Main section*/
+
+/* ABOUT JOT*/
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 107px;
+    
+}
+.title{
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    height: 300px;
+    background-image: url("../images/journal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+.title h2 {
+    color: white;
+    margin-top: 100px;
+    font-size: 42px;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+.title h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    
+}
+/* Our mission */
+.Mission {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 125px 50px 125px;
+    
+}
+.Mission img {
+    width: 50%;
+    height: 50%;
+}
+.text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    
+    
+}
+.text h3 {
+    margin: 0px 0px 0px 0px;
+}
+
+/* Our platform includes */
+
+.About {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 125px 50px 125px;
+}
+
+.journal {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.journal img {
+    width: 10%;
+    height: 10%;
+}
+.journal p {
+    padding-left: 15px;
+    margin-right: 100px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.progress img {
+    width: 10%;
+    height: 10%;
+}
+.progress p {
+    padding-left: 15px;
+    margin-right: 100px;
+}
+.chat {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.chat img {
+    width: 10%;
+    height: 10%;
+}
+.chat p {
+    padding-left: 15px;
+    margin-right: 100px;
+}

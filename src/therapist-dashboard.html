@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Dashboard</title>
-        <link rel="stylesheet" type= "text/css" href="dashboard.css">
+        <link rel="stylesheet" type= "text/css" href="../css/dashboard.css">
         <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -11,11 +11,11 @@
             <img src="../images/jot-logo.png" class="logo">
             <div class="navButtons">
                 <a href="about-us.html" id="about-us">About Us</a>
-                <a id="dashboard">Dashboard</a>
+                <a id="dashboard">Patients</a>
                 <a href="faqs.html" id="faq">FAQs</a>
             </div>
             <div class="welcome">
-                <a>Welcome, John</a>
+                <a>Welcome, Amy</a>
                 <div class="welcome-dash">
                     <a href="login.html" id="logout">Logout</a>
                     <a href="https://suicidepreventionlifeline.org/" target="_blank" id="emergency">Emergency</a>
@@ -25,42 +25,35 @@
         <div class="main">
             <div class="progress-chatroom">
                 <div class="progress-graph">
-                    <span id="progress-title">
-                        <h3>Progress Report:</h3>
-                    </span>
+                    <div id="progress-title">
+                        <h2>Progress Report</h2>
+                    </div>
                     <img src="../images/graph.png"><img>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
-                        <p id="chat-title">Chat with Amy</p>
+                        <h2 class="chat-title">Chat with John</h2>
                         <div class="is-online">
                             <img src="../images/offline.png"></img>
-                            <p>Offline</p>
+                            <span class="chat-status">Offline</span>
                         </div>
                     </div>
-                    <p class="chat-display">Therapist is not online...</p>
-                    <form class="message-area">
-                        <button>Send</button>
-                        <input class="chat-entry" type="text-area" placeholder="Type a message..."> </input>
-                    </form>
+                    <p class="chat-display">What's on your mind?</p>
+                    <input class="chat-entry" type="text" placeholder="Type a message..."> </input>
                 </div>
             </div>
             <div class="journal-hub">
                 <div class="journal-hub-header">
-                    <img src="../images/leaf.png"></img>
-                    <p id="hub-title">Journal Hub</p>
-                    <a href="journal.html"class="createNew">+ Create New</a>
-                    <a href="journal.html"class="createNewSmall">+</a>
+                    <h2 id="hub-title">Journal Hub</h2>
                 </div>
-                <form>
-                    <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>
-                </form>
+                <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>
                 <div class="entries">
                     <a href="#" id="entry-one">Entry One</a>
                     <a href="#" id="entry-two">Entry Two</a>
                     <a href="#" id="entry-three">Entry Three</a>
                     <a href="#" id="entry-four">Entry Four</a>
                     <a href="#" id="entry-five">Entry Five</a>
+                    <a href="#" id="entry-six">Entry Six</a>
                 </div>
             </div>
         </div>

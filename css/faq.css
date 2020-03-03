@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Cambo', serif;
+    font-size: 14pt;
+    background-color: #f2f0eb;
+  }
+
+/* Nav Bar CSS */
+.navBar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 130px;
+    height: 65px;
+    position: relative;
+    padding: 20px;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 675px;
+    position: absolute;
+}
+.navButtons a{
+    font-family: 'Cambo', serif;
+    text-decoration: none;
+    margin-top: 40px;
+    text-align: center;
+    color: #2e2e2e;
+    padding-bottom: 3px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.navButtons a:hover{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 50px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.welcome-dash{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+#logout {
+    text-decoration: none;
+    color: #2e2e2e;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+#logout:hover{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+}
+#emergency {
+    text-decoration: none;
+    color: #ff0000;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+#emergency:hover{
+    border-bottom: solid;
+    border-bottom-color: hsl(0, 100%, 50%);
+    border-bottom-width: 3px;
+    font-weight: bold;
+}
+.main{
+    padding-top: 76px;
+    
+}
+.title{
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    height: 300px;
+    background-image: url("../images/faqbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+.title h2 {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 120px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 150px 0px 25px;
+}
+.questions h3 {
+    padding-top: 10px;
+}

@@ -1,0 +1,9 @@
+-Dropdown on patients tab in the therapist dashboard.
+-Use a different symbol for the 'paperclip' function.
+-Get rid of purple highlight for buttons on the journal entry page.
+-Reflect journal entries in the dashboard.
+-Scaling
+
+
+250 cc
+70
