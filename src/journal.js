@@ -25,6 +25,7 @@ const saveEntry = () => {
 	{
 		saveCount++;
 		var newEntry = {
+			prompt: document.querySelector("#prompt").innerText,
 			title: document.querySelector("#title-input").value,
 			content: document.querySelector("#entry").value,
 			mood: document.querySelector(".slider").value,

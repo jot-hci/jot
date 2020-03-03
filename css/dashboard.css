@@ -288,6 +288,98 @@ html, body {
     margin-right: 10px;
 }
 
+/* Preview Entry */
+
+.preview-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.prompt-container {
+  justify-content: center;
+  align-items: flex-start;
+  margin-top : 0px;
+  padding-left: 50px;
+}
+
+.prompt-container h3 {
+  color: #2e2e2e;
+  font-weight: normal;
+}
+
+.journal-entry {
+  background-color: white;
+  margin-left: 30px;
+  width: 95.75%;
+  height: 60%;
+}
+
+.title-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-container {
+  width: 80%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  /*align-items: center;*/
+}
+
+.button-container button {
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  padding: 20px;
+  border: none;
+  color: white;
+  background-color: #54ab6b;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-family: 'Cambo', serif;
+  font-size: 11pt;
+  font-weight: bold;
+
+
+}
+
+#title-input {
+  width: 500px;
+  border: none;
+  height: 50px;
+  font-family: 'Cambo', serif;
+  font-size: 16pt;
+  padding: 0 10px;
+  margin: 5px;
+  background-color: #f2f0eb;
+}
+
+.entry-container {
+  margin-left: 20px;
+}
+
+#entry {
+  width: 96.25%;
+  height: 96.25%;
+  border: none;
+  font-family: 'Cambo', serif;
+  font-size: 16pt;
+  padding: 0 10px;
+  margin: 5px;
+  background-color: #f2f0eb;
+  padding-top: 10px;
+}
+
+
 @media screen and (max-width: 1000px){
     .createNew{
         display: none;
