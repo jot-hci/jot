@@ -11,7 +11,8 @@ const getEntryTemplate = (data, num) => {
 const loadEntries = () => {
 	var entries = document.querySelector(".entries");
 	for (var i = 0; i < localStorage.length; i++){
-		entries.innerHTML += getEntryTemplate(JSON.parse(localStorage.getItem(localStorage.key(i))), i);
+		if(localStorage.key(i) != "moodArray" && localStorage.key(i) != "dates")
+			entries.innerHTML += getEntryTemplate(JSON.parse(localStorage.getItem(localStorage.key(i))), i);
 	}
 
 	var regularPage = document.querySelector(".main").innerHTML;
