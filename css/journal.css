@@ -131,9 +131,10 @@ html, body {
 .mood-container {
   margin-top: 7px;
   color: #2e2e2e;
-  margin-left: 170px;
+  margin-left: 5%;
+  margin-right: 5px;
   height: 95%;
-  width: 30%;
+  width: 35%;
 }
 
 .mood-container h2 {
