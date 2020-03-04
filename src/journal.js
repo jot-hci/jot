@@ -55,4 +55,34 @@ const saveEntry = () => {
 
 };
 
+const saveMood = () => {
+	let mood = document.querySelector(".slider").value;
 
+	if (window.localStorage.getItem("moodArray") === null) {
+		var moodArray = [];
+		moodArray.push(mood);
+		window.localStorage.setItem("moodArray", JSON.stringify(moodArray));
+	}
+	else {
+		var arr = JSON.parse(window.localStorage.getItem("moodArray"));
+		arr.push(mood);
+		window.localStorage.setItem("moodArray", JSON.stringify(arr));
+	}
+
+	var d = new Date();
+	let month = d.getMonth() + 1;
+	let day = d.getDay() + 1;
+	let year = d.getFullYear();
+	let date = month + "/" + day + "/" + year;
+
+	if (window.localStorage.getItem("dates") === null) {
+		var dates = [];
+		dates.push(date);
+		window.localStorage.setItem("dates", JSON.stringify(dates));
+	}
+	else {
+		var dts = JSON.parse(window.localStorage.getItem("dates"));
+		dts.push(date);
+		window.localStorage.setItem("dates", JSON.stringify(dts));
+	}
+}

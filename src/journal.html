@@ -31,11 +31,28 @@
                 </div>
                 <div class= "mood-container">
                     <h2>How do you feel?</h2>
-                    <div class="slide-container">
-                        <i class="fas fa-sad-tear"></i>
-                        <input type="range" min="1" max="100" value="50" class="slider">
-                        <i class="fas fa-laugh-beam"></i>
+                    <div class="rate-mood">
+                        <div class="slide-container">
+                            <i class="fas fa-sad-tear"></i>
+                            <input type="range" min="1" max="10" steps="1" value="1" class="slider">
+                            <i class="fas fa-laugh-beam"></i>
+                        </div>
+                        <div class="mood-button-container">
+                            <button class="add-mood" onclick="saveMood()">Add Mood</button>
+                        </div>
                     </div>
+                    <ul class="range-labels">
+                        <li class="ratings">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                      </ul>
                 </div>
             </div>
             <section class= "journal-entry">

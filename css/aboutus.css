@@ -86,6 +86,13 @@ html, body {
     font-weight: bold;
 }
 
+#about-us{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+    font-weight: bold;
+}
+
 
 /*Main section*/
 

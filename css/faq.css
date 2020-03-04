@@ -85,6 +85,14 @@ html, body {
     border-bottom-width: 3px;
     font-weight: bold;
 }
+
+#faq{
+    border-bottom: solid;
+    border-bottom-color: #54ab6b;
+    border-bottom-width: 3px;
+    font-weight: bold;
+}
+
 .main{
     padding-top: 76px;
     
