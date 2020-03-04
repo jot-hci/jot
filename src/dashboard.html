@@ -59,8 +59,17 @@
     <script>
     var ctx = document.getElementById("moodChart").getContext('2d');
 
-    var moods = JSON.parse(window.localStorage.getItem("moodArray"));
-    var dates = JSON.parse(window.localStorage.getItem("dates"));
+    var moods = [2, 5, 3];
+    var dates = ["2/8/2020", "3/1/2020", "3/3/2020"];
+
+    var moodArr = JSON.parse(window.localStorage.getItem("moodArray"));
+    var datesArr = JSON.parse(window.localStorage.getItem("dates"));
+
+    if (moodArr != null)
+        moods = moods.concat(moodArr);
+
+    if (datesArr != null)
+        dates = dates.concat(datesArr);
 
     var moodChart = new Chart(ctx, {
         type: 'line',
