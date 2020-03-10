@@ -34,12 +34,13 @@ const saveEntry = () => {
 		if(newEntry.title == "")
 		{
 			var today = new Date();
-			var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+			var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
 			newEntry.title = date;
 		}
 		window.localStorage.setItem(localStorage.length, JSON.stringify(newEntry));
 		ind = localStorage.length - 1;
 		numEntries ++;
+		saveMood();
 	}
 
 	else {
@@ -51,8 +52,8 @@ const saveEntry = () => {
 			mood: document.querySelector(".slider").value,
 		};
 		window.localStorage.setItem(ind, JSON.stringify(entry));
+		saveMood();
 	}
-
 };
 
 const saveMood = () => {
@@ -71,7 +72,7 @@ const saveMood = () => {
 
 	var d = new Date();
 	let month = d.getMonth() + 1;
-	let day = d.getDay() + 1;
+	let day = d.getDate();
 	let year = d.getFullYear();
 	let date = month + "/" + day + "/" + year;
 

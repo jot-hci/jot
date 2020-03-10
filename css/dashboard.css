@@ -304,9 +304,20 @@ html, body {
   padding-left: 50px;
 }
 
-.prompt-container h3 {
-  color: #2e2e2e;
-  font-weight: normal;
+.subheader-container {
+    color: #2e2e2e;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+.subheader-container h4{
+    margin-left: 80%;
+}
+
+.subheader-container p{
+    padding-top: 6px;
+    padding-left: 5px;
 }
 
 .journal-entry {

@@ -13,7 +13,7 @@ const getEntryTemplate = (data, num) => {
 const loadEntries = () => {
 	var entries = document.querySelector(".entries");
 	for (var i = 0; i < localStorage.length; i++){
-		if(localStorage.key(i) != "moodArray" && localStorage.key(i) != "dates")
+		if(localStorage.key(i) != "moodArray" && localStorage.key(i) != "dates" && localStorage.key(i) != "moodAndEntryArray")
 			entries.innerHTML += getEntryTemplate(JSON.parse(localStorage.getItem(localStorage.key(i))), i);
 	}
 
@@ -59,12 +59,16 @@ const search = () => {
 
 /* previewing saved entries */
 
-const getPreviewTemplate = (data) => {
+const getPreviewTemplate = (data, mood) => {
 	const template = `
 	<div class= "preview-main">
 		<div class= "prompt-container">
-	        <h1> Journal Prompt: ${data.prompt} </h1>
-	        <h3> My Response: </h3>
+			<h1> Journal Prompt: ${data.prompt} </h1>
+			<div class= "subheader-container">
+				<h3> My Response: </h3>
+				<h4> Mood: </h4>
+				<p> ${data.mood} </p>
+			</div>
 	    </div>
 	    <section class= "journal-entry">
 	        <div class= "title-container">
@@ -84,6 +88,7 @@ const previewEntry = (ev) => {
 	var ind = ev.currentTarget.id.indexOf("-") + 1;
 	const key = ev.currentTarget.id.substring(ind);
 	const data = JSON.parse(localStorage.getItem(localStorage.key(key)));
+
 	document.querySelector(".main").innerHTML = getPreviewTemplate(data);
 	document.querySelector("#dashboard").innerHTML;
 
