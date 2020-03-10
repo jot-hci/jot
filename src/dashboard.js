@@ -24,13 +24,10 @@ const loadEntries = () => {
 
 /* searching for entries */
 
-document.querySelector('.search-bar').onkeyup = (ev) => {
-    // 13 --> enter key
-    console.log(ev.keyCode);
-    if (ev.keyCode === 13) {
-        ev.preventDefault();
-        search();
-    }
+document.querySelector('.search-bar').oninput = (ev) => {
+    
+    search();
+
 };
 
 const search = () => {
