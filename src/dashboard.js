@@ -81,10 +81,11 @@ const getPreviewTemplate = (data) => {
 }
 
 const previewEntry = (ev) => {
-	const key = ev.currentTarget.id;
+	var ind = ev.currentTarget.id.indexOf("-") + 1;
+	const key = ev.currentTarget.id.substring(ind);
 	const data = JSON.parse(localStorage.getItem(localStorage.key(key)));
 	document.querySelector(".main").innerHTML = getPreviewTemplate(data);
-	document.querySelector("#dashboard").innerHTML
+	document.querySelector("#dashboard").innerHTML;
 
 };
 
