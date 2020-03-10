@@ -7,12 +7,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload ="loadEntries()">
         <div class="navBar">
             <img src="../images/jot-logo.png" class="logo">
             <div class="navButtons">
                 <a href="about-us.html" id="about-us">About Us</a>
-                <a id="dashboard">Patients</a>
+                <a onclick="returnBack()" id="dashboard">Patients</a>
                 <a href="faqs.html" id="faq">FAQs</a>
             </div>
             <div class="welcome">
@@ -49,15 +49,10 @@
                 </div>
                 <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>
                 <div class="entries">
-                    <a href="therapist-journal-view.html" id="entry-one">Entry One</a>
-                    <a href="#" id="entry-two">Entry Two</a>
-                    <a href="#" id="entry-three">Entry Three</a>
-                    <a href="#" id="entry-four">Entry Four</a>
-                    <a href="#" id="entry-five">Entry Five</a>
-                    <a href="#" id="entry-six">Entry Six</a>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="therapist-dashboard.js"></script>
     </body>
     <script>
       var ctx = document.getElementById("moodChart").getContext('2d');
