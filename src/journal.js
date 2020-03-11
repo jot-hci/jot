@@ -8,16 +8,30 @@ const newEntry = () => {
 
 const pinEntry = () => {
 	const pin = document.getElementById('pin');
+	if (saveCount == 0)
+	{
+		alert("Save entry first and try again.");
+		return;
+	}
+
 	if (pin.style.opacity == "1")
 	{
 		alert("Entry is no longer visible to therapist.");
-		pin.style.opacity = ".7";
+		// pin.style.opacity = ".7";
+		// entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
+	 //    entry.shared = false;
+	 //    window.localStorage.setItem(ind, JSON.stringify(entry));
 	}
 
 	else {
 	    alert("Entry is now visible to therapist.");
-	    pin.style.opacity = "1";
+	    // pin.style.opacity = "1";
+	    // entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
+	    // entry.shared = true;
+	    // window.localStorage.setItem(ind, JSON.stringify(entry));
+
 	}
+
 };
 
 const saveEntry = () => {
@@ -29,6 +43,7 @@ const saveEntry = () => {
 			title: document.querySelector("#title-input").value,
 			content: document.querySelector("#entry").value,
 			mood: document.querySelector(".slider").value,
+			shared: false,
 		};
 
 		if(newEntry.title == "")
@@ -47,10 +62,20 @@ const saveEntry = () => {
 		saveCount++;
 		var entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
 		entry = {
+			prompt: entry.prompt,
 			title: document.querySelector("#title-input").value,
 			content: document.querySelector("#entry").value,
 			mood: document.querySelector(".slider").value,
+			shared: entry.shared,
 		};
+
+		if(entry.title == "")
+		{
+			var today = new Date();
+			var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+			newEntry.title = date;
+		}
+
 		window.localStorage.setItem(ind, JSON.stringify(entry));
 		saveMood();
 	}
