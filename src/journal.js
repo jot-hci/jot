@@ -1,4 +1,3 @@
-let numEntries = 0;
 let saveCount = 0;
 var ind = 0;
 
@@ -17,18 +16,18 @@ const pinEntry = () => {
 	if (pin.style.opacity == "1")
 	{
 		alert("Entry is no longer visible to therapist.");
-		// pin.style.opacity = ".7";
-		// entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
-	 //    entry.shared = false;
-	 //    window.localStorage.setItem(ind, JSON.stringify(entry));
+		pin.style.opacity = ".7";
+		entry = JSON.parse(window.localStorage.getItem(ind));
+	    entry.shared = false;
+	    window.localStorage.setItem(ind, JSON.stringify(entry));
 	}
 
 	else {
 	    alert("Entry is now visible to therapist.");
-	    // pin.style.opacity = "1";
-	    // entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
-	    // entry.shared = true;
-	    // window.localStorage.setItem(ind, JSON.stringify(entry));
+	    pin.style.opacity = "1";
+	    entry = JSON.parse(window.localStorage.getItem(ind));
+	    entry.shared = true;
+	    window.localStorage.setItem(ind, JSON.stringify(entry));
 
 	}
 
@@ -54,13 +53,12 @@ const saveEntry = () => {
 		}
 		window.localStorage.setItem(localStorage.length, JSON.stringify(newEntry));
 		ind = localStorage.length - 1;
-		numEntries ++;
 		saveMood();
 	}
 
 	else {
 		saveCount++;
-		var entry = JSON.parse(window.localStorage.getItem(localStorage.key(ind)));
+		var entry = JSON.parse(window.localStorage.getItem(ind));
 		entry = {
 			prompt: entry.prompt,
 			title: document.querySelector("#title-input").value,
@@ -68,6 +66,8 @@ const saveEntry = () => {
 			mood: document.querySelector(".slider").value,
 			shared: entry.shared,
 		};
+
+		console.log(entry.shared);
 
 		if(entry.title == "")
 		{

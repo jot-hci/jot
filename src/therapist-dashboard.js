@@ -16,7 +16,11 @@ const loadEntries = () => {
 	var entries = document.querySelector(".entries");
 	for (var i = 0; i < localStorage.length; i++){
 		if(localStorage.key(i) != "moodArray" && localStorage.key(i) != "dates" && localStorage.key(i) != "moodAndEntryArray")
-			entries.innerHTML += getEntryTemplate(JSON.parse(localStorage.getItem(localStorage.key(i))), i);
+		{
+			entry = JSON.parse(localStorage.getItem(localStorage.key(i)));
+			if(entry.shared)
+				entries.innerHTML += getEntryTemplate(entry, i);
+		}
 	}
 
 	var regularPage = document.querySelector(".main").innerHTML;
