@@ -73,7 +73,7 @@ const saveEntry = () => {
 		{
 			var today = new Date();
 			var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
-			newEntry.title = date;
+			entry.title = date;
 		}
 
 		window.localStorage.setItem(ind, JSON.stringify(entry));
