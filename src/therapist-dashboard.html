@@ -6,17 +6,18 @@
         <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico"/>
     </head>
     <body onload ="loadEntries()">
         <div class="navBar">
             <img src="../images/jot-logo.png" class="logo">
             <div class="navButtons">
                 <a href="about-us.html" id="about-us">About Us</a>
-                <a onclick="returnBack()" id="dashboard">Patients</a>
+                <a onclick="returnBack()" id="dashboard">Dashboard</a>
                 <a href="faqs.html" id="faq">FAQs</a>
             </div>
             <div class="welcome">
-                <a>Welcome, Amy</a>
+                <a>Welcome, John</a>
                 <div class="welcome-dash">
                     <a href="login.html" id="logout">Logout</a>
                     <a href="https://suicidepreventionlifeline.org/" target="_blank" id="emergency">Emergency</a>
@@ -26,10 +27,10 @@
         <div class="main">
             <div class="progress-chatroom">
                 <div class="progress-graph">
-                    <div id="progress-title">
-                        <h2>Mood Progress</h2>
+                    <h2 id="progress-title">Mood Progress</h2>
+                    <div class="graph-container">
+                        <canvas id="moodChart" responsive="false"></canvas>
                     </div>
-                    <canvas id="moodChart"></canvas>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
@@ -52,10 +53,10 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="therapist-dashboard.js"></script>
+        <script type="text/javascript" src="dashboard.js"></script>
     </body>
     <script>
-      var ctx = document.getElementById("moodChart").getContext('2d');
+    var ctx = document.getElementById("moodChart").getContext('2d');
 
     var moods = [2, 5, 3];
     var dates = ["2/8/2020", "3/1/2020", "3/3/2020"];

@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico"/>
     </head>
     <body onload ="loadEntries()">
         <div class="navBar">
@@ -26,10 +27,10 @@
         <div class="main">
             <div class="progress-chatroom">
                 <div class="progress-graph">
-                    <div id="progress-title">
-                        <h2>Mood Progress</h2>
+                    <h2 id="progress-title">Mood Progress</h2>
+                    <div class="graph-container">
+                        <canvas id="moodChart" responsive="false"></canvas>
                     </div>
-                    <canvas id="moodChart"></canvas>
                 </div>
                 <div class="chatroom">
                     <div class="chat-header">
@@ -47,7 +48,6 @@
                 <div class="journal-hub-header">
                     <h2 id="hub-title">Journal Hub</h2>
                     <a href="journal.html"class="createNew">+</a>
-                    <a href="journal.html"class="createNewSmall">+</a>
                 </div>
                 <input class="search-bar" type="text-area" placeholder="Search for entry..."> </input>
                 <div class="entries">
