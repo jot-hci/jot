@@ -112,3 +112,25 @@ const saveMood = () => {
 		window.localStorage.setItem("dates", JSON.stringify(dts));
 	}
 }
+
+const popupMoodShow = () => {
+	var popup = document.getElementById("moodPopup");
+	popup.classList.add("show");
+	setTimeout(popupMoodFade, 3000);
+}
+
+const popupMoodFade = () => {
+	var popup = document.getElementById("moodPopup");
+	popup.classList.remove("show");
+}
+
+const popupSaveShow = () => {
+	var popup = document.getElementById("savePopup");
+	popup.classList.add("show");
+	setTimeout(popupSaveFade, 3000);
+}
+
+const popupSaveFade = () => {
+	var popup = document.getElementById("savePopup");
+	popup.classList.remove("show");
+}

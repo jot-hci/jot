@@ -39,7 +39,10 @@
                             <i class="fas fa-laugh-beam"></i>
                         </div>
                         <div class="mood-button-container">
-                            <button class="add-mood" onclick="saveMood()">Add Mood</button>
+                            <button class="add-mood" onclick="saveMood(); popupMoodShow();">Add Mood</button>
+                        </div>
+                        <div class="mood-popup-container">
+                            <span class="mood-popuptext" id="moodPopup">Your Mood Was Added To The Chart!</span>
                         </div>
                     </div>
                     <ul class="range-labels">
@@ -61,8 +64,11 @@
                     <input id="title-input" type="text" placeholder="Enter Optional Title Here" name="title">
                     <div class="button-container">
                         <div class="save-container">
-                            <button id="save" onclick="saveEntry()"><i class="far fa-save fa-lg"></i></button>
+                            <button id="save" onclick="saveEntry(); popupSaveShow();"><i class="far fa-save fa-lg"></i></button>
                             <span class="tooltip">Save entry.</span>
+                            <div class="save-popup-container">
+                                <span class="save-popuptext" id="savePopup">Your Entry Was Added To The Dashboard!</span>
+                            </div>
                         </div>
                         <div class="done-container">
                             <button id="done" onclick="window.location.href = 'dashboard.html';"><i class="fas fa-times-circle fa-lg"></i></button>
