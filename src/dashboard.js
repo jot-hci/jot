@@ -87,7 +87,20 @@ const previewEntry = (ev) => {
 	const data = JSON.parse(localStorage.getItem(localStorage.key(key)));
 
 	document.querySelector(".main").innerHTML = getPreviewTemplate(data);
-	document.querySelector("#dashboard").innerHTML;
+	var dash = document.querySelector("#dashboard");
+	dash.style.borderBottom = "none";
+	dash.style.fontWeight = "normal";
+	dash.addEventListener("mouseenter", function( event ) {   
+  		dash.style.borderBottom = "solid";
+  		dash.style.borderBottomColor = "hsl(150, 54%, 44%)";
+  		dash.style.borderBottomWidth = "3px";
+  	});
+  	
+  	dash.addEventListener("mouseleave", function( event ) {   
+  		dash.style.borderBottom = "none";
+  	});
+
+
 
 };
 
