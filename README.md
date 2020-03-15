@@ -34,19 +34,33 @@ Overall, we learned that journaling is only effective if it meets the individual
 <h2>PAPER PROTOTYPING</h2>
 Video Clip: https://youtu.be/vSg2L5BzO5Y
 <h2>HIGH-FIDELITY PROTOTYPING</h2>
+
 The **First Task** we approached was signing up, logging in, and viewing user profiles. If they don’t already have an account, users can create one and log in, at which point they are then immediately taken to their personal dashboard; otherwise, they can go straight to the login page, enter their credentials, and be taken to their dashboard. Depending on whether they register as a patient or a mental health professional, different dashboards are displayed to the user. Each page is linked, so users can navigate the platform seamlessly when completing this task.
+
 Link to use: https://youtu.be/psf3WkkiTGA
+
 The **Second Task** we implemented was a journal entry feature. When the user accesses the journal hub, they can now click on the plus sign to access today’s prompt. In this page, they can journal about their therapy experiences and use the prompt as inspiration for their journaling. They can choose to paperclip their notes, which makes them private, or they can make them public for their therapist. Lastly, users can also input their mood in the slider, which submits data to be plotted by the progress tracking chart. The journal entry feature has also been added to the therapist dashboard, where the therapist can see their patient’s notes and choose to contact them.
+
 Link to use: https://youtu.be/0gz7WZlrZ7g
+
 Our **Third Task** was to implement an interactive data visualization component to track the mood of a user over time. We found a method to save journal entries and mood slider data from our users, and have created a mood based progress report that updates each time new data is retrieved from a user. We have also included saved journal entry previews, an FAQ page, and an About Us page.
+
 Link to use: https://youtu.be/fjt3Iyck6tA
+
 <h2>COMPONENTS IMPLEMENTED</h2>
+
 For our **First Round** of prototyping, we chose to implement a component that would allow users to create individual profiles in which to store information. To access the profiles, we created login and register pages that support two kinds of users: patients and mental health professionals. Our login page uses an email address as a username and requires a password. The password field must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. The email field must contain an &#39;@&#39; symbol as well as a website name following the &#39;@&#39; symbol. The form also adheres to the guidelines for good form design. Both pages are accessible from each other - that is, you can access the login page from the register page and vice versa. In the case that a user attempts to log on without entering information, a pop-up will appear asking the user to first input information into the textboxes. Through this feature, patients can access their personalized insights, journal entries, and previous chats while keeping this data securely stored.
+
 Link to use: https://youtu.be/psf3WkkiTGA
+
 For our **Second Round** of prototyping, we chose to implement a component that would allow users to create new entries and input their mood rating - a data collection form. To access the journaling page, we created a new page accessible from the journal hub in the dashboard. Once in this page, users can enter an optional title for their notes and use the provided prompt as a starting point for their journaling. There are also three icons next to the journal: a save button, a ‘done’ key, and a paperclip option. The paperclip option is used to make notes private/public. When clicked, a popup appears informing the user of the privacy status of their current notes. Additionally, the page collects another data component, a mood rating. Users can use the slider to reflect their current mood state, and this data is recorded by the progress tracking chart in the dashboard.
+
 Link to use: https://youtu.be/0gz7WZlrZ7g
+
 For our **Third Round** of prototyping the component we created is a line graph that tracks a user’s mood over time. This component exists on the user dashboard. When a user creates a new journal entry, they are also introduced to a mood slider on the top right of the journaling page. This is where the user can input their mood on any given day. When the user inputs their mood, the data is then stored and the mood progress report on the dashboard is updated with the new data point.
+
 Link to use: https://youtu.be/fjt3Iyck6tA
+
 <h2>REFLECTION</h2>
 <h3>What we accomplished</h3>
 Our final deliverable is a largely front-end template of what we would imagine our final website to be when finished. The most important functions of our page have been implemented, with most of our focus on the journaling interface. Journal entries and mood progress can be saved in local storage and created and viewed easily. We put a lot of focus into the aesthetic of our website as well, it looks like a finished product. We were also able to create About Us & FAQ pages as well as information collection forms for logging in and creating an account. We have a template for a chat room feature too, but we have not implemented its functionality. Overall, we feel as though we have created a great first prototype, but it is definitely not a finished product.
@@ -54,7 +68,9 @@ Our final deliverable is a largely front-end template of what we would imagine o
 If we had more time to work on this project, we would begin to work on the backend and connect the site to a database. We would add a way to make personal accounts and save journal entries for different users. We would also implement the chatroom feature and polish off the aesthetic of the site. May, who came up with the idea for this project, is also considering moving this project to a mobile platform. We may take this project to The Garage to build on it and rework it for mobile, or expand on the website we have already created. We think we would also need to begin working with mental health experts in more depth if we continued to pursue this in any commercial way considering that this app would ultimately be used by mental health professionals and should reflect their needs and expertise.
 <h2>LINKS</h2>
 A link to our repository : https://github.com/jot-hci/jot
+
 A link to video of prototype: https://youtu.be/wQyG1CM_Zgs
+
 Best viewed on Google Chrome, see video on how to navigate our site.
 <h2>SOURCES</h2>
  Howley, E. K. (2019, June 26). What Mental Health Statistics Can Tell Us. Retrieved January 21, 2020, from https://health.usnews.com/conditions/mental-health/articles/what-mental-health-statistics-can-tell-us
