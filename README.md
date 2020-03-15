@@ -50,23 +50,24 @@ Link to use: https://youtu.be/fjt3Iyck6tA
 <h2>COMPONENTS IMPLEMENTED</h2>
 
 For our **First Round** of prototyping, we chose to implement a component that would allow users to create individual profiles in which to store information. To access the profiles, we created login and register pages that support two kinds of users: patients and mental health professionals. Our login page uses an email address as a username and requires a password. The password field must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. The email field must contain an &#39;@&#39; symbol as well as a website name following the &#39;@&#39; symbol. The form also adheres to the guidelines for good form design. Both pages are accessible from each other - that is, you can access the login page from the register page and vice versa. In the case that a user attempts to log on without entering information, a pop-up will appear asking the user to first input information into the textboxes. Through this feature, patients can access their personalized insights, journal entries, and previous chats while keeping this data securely stored.
+
+Link to use: https://youtu.be/psf3WkkiTGA
 ![Login](images/Login.png)
 ![Sign Up](images/SignUp.png)
 ![Login Message](images/LoginMessage.png)
 ![Sign Up Message](images/SignUpMessage.png)
 
-Link to use: https://youtu.be/psf3WkkiTGA
-
 For our **Second Round** of prototyping, we chose to implement a component that would allow users to create new entries and input their mood rating - a data collection form. To access the journaling page, we created a new page accessible from the journal hub in the dashboard. Once in this page, users can enter an optional title for their notes and use the provided prompt as a starting point for their journaling. There are also three icons next to the journal: a save button, a ‘done’ key, and a paperclip option. The paperclip option is used to make notes private/public. When clicked, a popup appears informing the user of the privacy status of their current notes. Additionally, the page collects another data component, a mood rating. Users can use the slider to reflect their current mood state, and this data is recorded by the progress tracking chart in the dashboard.
+
+Link to use: https://youtu.be/0gz7WZlrZ7g
 ![Journal Hub](images/JournalHub.png)
 ![Journal Page](images/Journal.png)
 
-Link to use: https://youtu.be/0gz7WZlrZ7g
-
 For our **Third Round** of prototyping the component we created is a line graph that tracks a user’s mood over time. This component exists on the user dashboard. When a user creates a new journal entry, they are also introduced to a mood slider on the top right of the journaling page. This is where the user can input their mood on any given day. When the user inputs their mood, the data is then stored and the mood progress report on the dashboard is updated with the new data point.
+
+Link to use: https://youtu.be/fjt3Iyck6tA
 ![Mood Progress](images/Mood.png)
 ![Mood Bar](images/Mood2.png)
-Link to use: https://youtu.be/fjt3Iyck6tA
 
 <h2>REFLECTION</h2>
 <h3>What we accomplished</h3>
