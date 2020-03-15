@@ -70,7 +70,6 @@ If we had more time to work on this project, we would begin to work on the backe
 A link to our repository : https://github.com/jot-hci/jot
 
 A link to video of prototype: https://youtu.be/wQyG1CM_Zgs
-
 Best viewed on Google Chrome, see video on how to navigate our site.
 <h2>SOURCES</h2>
  Howley, E. K. (2019, June 26). What Mental Health Statistics Can Tell Us. Retrieved January 21, 2020, from https://health.usnews.com/conditions/mental-health/articles/what-mental-health-statistics-can-tell-us
